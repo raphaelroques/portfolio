@@ -1,0 +1,1312 @@
+@charset "UTF-8";
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'devicons';
+  src: url("../fonts/devicons.eot?xqxft6");
+  src: url("../fonts/devicons.eot?#iefixxqxft6") format("embedded-opentype"), url("../fonts/devicons.woff?xqxft6") format("woff"), url("../fonts/devicons.ttf?xqxft6") format("truetype"), url("../fonts/devicons.svg?xqxft6#devicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.devicons {
+  font-family: 'devicons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.devicons-git:before {
+  content: "";
+}
+
+.devicons-git_compare:before {
+  content: "";
+}
+
+.devicons-git_branch:before {
+  content: "";
+}
+
+.devicons-git_commit:before {
+  content: "";
+}
+
+.devicons-git_pull_request:before {
+  content: "";
+}
+
+.devicons-git_merge:before {
+  content: "";
+}
+
+.devicons-bitbucket:before {
+  content: "";
+}
+
+.devicons-github_alt:before {
+  content: "";
+}
+
+.devicons-github_badge:before {
+  content: "";
+}
+
+.devicons-github:before {
+  content: "";
+}
+
+.devicons-github_full:before {
+  content: "";
+}
+
+.devicons-java:before {
+  content: "";
+}
+
+.devicons-ruby:before {
+  content: "";
+}
+
+.devicons-scala:before {
+  content: "";
+}
+
+.devicons-python:before {
+  content: "";
+}
+
+.devicons-go:before {
+  content: "";
+}
+
+.devicons-ruby_on_rails:before {
+  content: "";
+}
+
+.devicons-django:before {
+  content: "";
+}
+
+.devicons-markdown:before {
+  content: "";
+}
+
+.devicons-php:before {
+  content: "";
+}
+
+.devicons-mysql:before {
+  content: "";
+}
+
+.devicons-streamline:before {
+  content: "";
+}
+
+.devicons-database:before {
+  content: "";
+}
+
+.devicons-laravel:before {
+  content: "";
+}
+
+.devicons-javascript:before {
+  content: "";
+}
+
+.devicons-angular:before {
+  content: "";
+}
+
+.devicons-backbone:before {
+  content: "";
+}
+
+.devicons-coffeescript:before {
+  content: "";
+}
+
+.devicons-jquery:before {
+  content: "";
+}
+
+.devicons-modernizr:before {
+  content: "";
+}
+
+.devicons-jquery_ui:before {
+  content: "";
+}
+
+.devicons-ember:before {
+  content: "";
+}
+
+.devicons-dojo:before {
+  content: "";
+}
+
+.devicons-nodejs:before {
+  content: "";
+}
+
+.devicons-nodejs_small:before {
+  content: "";
+}
+
+.devicons-javascript_shield:before {
+  content: "";
+}
+
+.devicons-bootstrap:before {
+  content: "";
+}
+
+.devicons-sass:before {
+  content: "";
+}
+
+.devicons-css3_full:before {
+  content: "";
+}
+
+.devicons-css3:before {
+  content: "";
+}
+
+.devicons-html5:before {
+  content: "";
+}
+
+.devicons-html5_multimedia:before {
+  content: "";
+}
+
+.devicons-html5_device_access:before {
+  content: "";
+}
+
+.devicons-html5_3d_effects:before {
+  content: "";
+}
+
+.devicons-html5_connectivity:before {
+  content: "";
+}
+
+.devicons-ghost_small:before {
+  content: "";
+}
+
+.devicons-ghost:before {
+  content: "";
+}
+
+.devicons-magento:before {
+  content: "";
+}
+
+.devicons-joomla:before {
+  content: "";
+}
+
+.devicons-jekyll_small:before {
+  content: "";
+}
+
+.devicons-drupal:before {
+  content: "";
+}
+
+.devicons-wordpress:before {
+  content: "";
+}
+
+.devicons-grunt:before {
+  content: "";
+}
+
+.devicons-bower:before {
+  content: "";
+}
+
+.devicons-npm:before {
+  content: "";
+}
+
+.devicons-yahoo_small:before {
+  content: "";
+}
+
+.devicons-yahoo:before {
+  content: "";
+}
+
+.devicons-bing_small:before {
+  content: "";
+}
+
+.devicons-windows:before {
+  content: "";
+}
+
+.devicons-linux:before {
+  content: "";
+}
+
+.devicons-ubuntu:before {
+  content: "";
+}
+
+.devicons-android:before {
+  content: "";
+}
+
+.devicons-apple:before {
+  content: "";
+}
+
+.devicons-appstore:before {
+  content: "";
+}
+
+.devicons-phonegap:before {
+  content: "";
+}
+
+.devicons-blackberry:before {
+  content: "";
+}
+
+.devicons-stackoverflow:before {
+  content: "";
+}
+
+.devicons-techcrunch:before {
+  content: "";
+}
+
+.devicons-codrops:before {
+  content: "";
+}
+
+.devicons-css_tricks:before {
+  content: "";
+}
+
+.devicons-smashing_magazine:before {
+  content: "";
+}
+
+.devicons-netmagazine:before {
+  content: "";
+}
+
+.devicons-codepen:before {
+  content: "";
+}
+
+.devicons-cssdeck:before {
+  content: "";
+}
+
+.devicons-hackernews:before {
+  content: "";
+}
+
+.devicons-dropbox:before {
+  content: "";
+}
+
+.devicons-google_drive:before {
+  content: "";
+}
+
+.devicons-visualstudio:before {
+  content: "";
+}
+
+.devicons-unity_small:before {
+  content: "";
+}
+
+.devicons-raspberry_pi:before {
+  content: "";
+}
+
+.devicons-chrome:before {
+  content: "";
+}
+
+.devicons-ie:before {
+  content: "";
+}
+
+.devicons-firefox:before {
+  content: "";
+}
+
+.devicons-opera:before {
+  content: "";
+}
+
+.devicons-safari:before {
+  content: "";
+}
+
+.devicons-swift:before {
+  content: "";
+}
+
+.devicons-symfony:before {
+  content: "";
+}
+
+.devicons-symfony_badge:before {
+  content: "";
+}
+
+.devicons-less:before {
+  content: "";
+}
+
+.devicons-stylus:before {
+  content: "";
+}
+
+.devicons-trello:before {
+  content: "";
+}
+
+.devicons-atlassian:before {
+  content: "";
+}
+
+.devicons-jira:before {
+  content: "";
+}
+
+.devicons-envato:before {
+  content: "";
+}
+
+.devicons-snap_svg:before {
+  content: "";
+}
+
+.devicons-raphael:before {
+  content: "";
+}
+
+.devicons-google_analytics:before {
+  content: "";
+}
+
+.devicons-compass:before {
+  content: "";
+}
+
+.devicons-onedrive:before {
+  content: "";
+}
+
+.devicons-gulp:before {
+  content: "";
+}
+
+.devicons-atom:before {
+  content: "";
+}
+
+.devicons-cisco:before {
+  content: "";
+}
+
+.devicons-nancy:before {
+  content: "";
+}
+
+.devicons-clojure:before {
+  content: "";
+}
+
+.devicons-clojure_alt:before {
+  content: "";
+}
+
+.devicons-perl:before {
+  content: "";
+}
+
+.devicons-celluloid:before {
+  content: "";
+}
+
+.devicons-w3c:before {
+  content: "";
+}
+
+.devicons-redis:before {
+  content: "";
+}
+
+.devicons-postgresql:before {
+  content: "";
+}
+
+.devicons-webplatform:before {
+  content: "";
+}
+
+.devicons-jenkins:before {
+  content: "";
+}
+
+.devicons-requirejs:before {
+  content: "";
+}
+
+.devicons-opensource:before {
+  content: "";
+}
+
+.devicons-typo3:before {
+  content: "";
+}
+
+.devicons-uikit:before {
+  content: "";
+}
+
+.devicons-doctrine:before {
+  content: "";
+}
+
+.devicons-groovy:before {
+  content: "";
+}
+
+.devicons-nginx:before {
+  content: "";
+}
+
+.devicons-haskell:before {
+  content: "";
+}
+
+.devicons-zend:before {
+  content: "";
+}
+
+.devicons-gnu:before {
+  content: "";
+}
+
+.devicons-yeoman:before {
+  content: "";
+}
+
+.devicons-heroku:before {
+  content: "";
+}
+
+.devicons-debian:before {
+  content: "";
+}
+
+.devicons-travis:before {
+  content: "";
+}
+
+.devicons-dotnet:before {
+  content: "";
+}
+
+.devicons-codeigniter:before {
+  content: "";
+}
+
+.devicons-javascript_badge:before {
+  content: "";
+}
+
+.devicons-yii:before {
+  content: "";
+}
+
+.devicons-msql_server:before {
+  content: "";
+}
+
+.devicons-composer:before {
+  content: "";
+}
+
+.devicons-krakenjs_badge:before {
+  content: "";
+}
+
+.devicons-krakenjs:before {
+  content: "";
+}
+
+.devicons-mozilla:before {
+  content: "";
+}
+
+.devicons-firebase:before {
+  content: "";
+}
+
+.devicons-sizzlejs:before {
+  content: "";
+}
+
+.devicons-creativecommons:before {
+  content: "";
+}
+
+.devicons-creativecommons_badge:before {
+  content: "";
+}
+
+.devicons-mitlicence:before {
+  content: "";
+}
+
+.devicons-senchatouch:before {
+  content: "";
+}
+
+.devicons-bugsense:before {
+  content: "";
+}
+
+.devicons-extjs:before {
+  content: "";
+}
+
+.devicons-mootools_badge:before {
+  content: "";
+}
+
+.devicons-mootools:before {
+  content: "";
+}
+
+.devicons-ruby_rough:before {
+  content: "";
+}
+
+.devicons-komodo:before {
+  content: "";
+}
+
+.devicons-coda:before {
+  content: "";
+}
+
+.devicons-bintray:before {
+  content: "";
+}
+
+.devicons-terminal:before {
+  content: "";
+}
+
+.devicons-code:before {
+  content: "";
+}
+
+.devicons-responsive:before {
+  content: "";
+}
+
+.devicons-dart:before {
+  content: "";
+}
+
+.devicons-aptana:before {
+  content: "";
+}
+
+.devicons-mailchimp:before {
+  content: "";
+}
+
+.devicons-netbeans:before {
+  content: "";
+}
+
+.devicons-dreamweaver:before {
+  content: "";
+}
+
+.devicons-brackets:before {
+  content: "";
+}
+
+.devicons-eclipse:before {
+  content: "";
+}
+
+.devicons-cloud9:before {
+  content: "";
+}
+
+.devicons-scrum:before {
+  content: "";
+}
+
+.devicons-prolog:before {
+  content: "";
+}
+
+.devicons-terminal_badge:before {
+  content: "";
+}
+
+.devicons-code_badge:before {
+  content: "";
+}
+
+.devicons-mongodb:before {
+  content: "";
+}
+
+.devicons-meteor:before {
+  content: "";
+}
+
+.devicons-meteorfull:before {
+  content: "";
+}
+
+.devicons-fsharp:before {
+  content: "";
+}
+
+.devicons-rust:before {
+  content: "";
+}
+
+.devicons-ionic:before {
+  content: "";
+}
+
+.devicons-sublime:before {
+  content: "";
+}
+
+.devicons-appcelerator:before {
+  content: "";
+}
+
+.devicons-asterisk:before {
+  content: "";
+}
+
+.devicons-aws:before {
+  content: "";
+}
+
+.devicons-digital-ocean:before {
+  content: "";
+}
+
+.devicons-dlang:before {
+  content: "";
+}
+
+.devicons-docker:before {
+  content: "";
+}
+
+.devicons-erlang:before {
+  content: "";
+}
+
+.devicons-google-cloud-platform:before {
+  content: "";
+}
+
+.devicons-grails:before {
+  content: "";
+}
+
+.devicons-illustrator:before {
+  content: "";
+}
+
+.devicons-intellij:before {
+  content: "";
+}
+
+.devicons-materializecss:before {
+  content: "";
+}
+
+.devicons-openshift:before {
+  content: "";
+}
+
+.devicons-photoshop:before {
+  content: "";
+}
+
+.devicons-rackspace:before {
+  content: "";
+}
+
+.devicons-react:before {
+  content: "";
+}
+
+.devicons-redhat:before {
+  content: "";
+}
+
+.devicons-scriptcs:before {
+  content: "";
+}
+
+.devicons-sqllite:before {
+  content: "";
+}
+
+.devicons-vim:before {
+  content: "";
+}
+
+.slide-menu {
+  width: 250px;
+  position: fixed;
+  background-color: #313131;
+  height: 100vh;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.logo span {
+  color: #fa9b1b;
+}
+
+.menu-links li {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 10px;
+}
+
+.menu-links li:first-child {
+  border-top: 1px solid grey;
+}
+
+.menu-links li:last-child {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.menu-links li a {
+  font-size: 1.5rem;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px 0;
+}
+
+@media (max-width: 900px) {
+  .slide-menu {
+    visibility: hidden;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    -webkit-transition: opacity 2000ms, visibility 600ms;
+    transition: opacity 2000ms, visibility 600ms;
+  }
+}
+
+.page-content {
+  padding-left: 250px;
+}
+
+@media (max-width: 900px) {
+  .page-content {
+    padding-left: 0px;
+  }
+}
+
+.top-nav {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .top-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+    background-color: #313131;
+  }
+  .top-nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-size: contain;
+  background: url(../images/header-background.jpg) center center no-repeat fixed;
+}
+
+header h3 {
+  font-size: 4rem;
+  width: 300px;
+}
+
+header h3 span {
+  color: #fa9b1b;
+  display: block;
+  width: 400px;
+}
+
+header h4 {
+  font-size: 3rem;
+}
+
+.about-me {
+  padding: 50px 0;
+}
+
+.about-me h2 {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.about-me-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-me .image-container {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.about-me .image-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about-me .text-container {
+  width: 60%;
+}
+
+.about-me .text-container p {
+  margin-bottom: 10px;
+}
+
+.skills {
+  background-color: #292929;
+  padding: 50px 0;
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills ul li {
+  height: 125px;
+  width: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .devicons {
+  font-size: 5rem;
+}
+
+footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #313131;
+}
+
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-container p {
+  display: inline;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  color: white;
+  background-color: #313131;
+}
+
+.wrapper {
+  padding-right: 55px;
+  padding-left: 55px;
+}
+
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+i {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    max-width: 1280px;
+    margin: 0 auto 0 auto;
+    width: 90%;
+    padding: 0;
+  }
+}

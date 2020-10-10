@@ -1,0 +1,57 @@
+.slide-menu {
+    width: 250px;
+    position: fixed;
+    background-color: #313131;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.logo span {
+    color: #fa9b1b;
+}
+
+.menu-links {
+    li {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid #aaaaaa;
+        padding: 10px;
+
+        &:first-child {
+            border-top: 1px solid grey;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid #aaaaaa;
+        }
+
+        a {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+@media (max-width: 900px) {
+
+    .slide-menu {
+        visibility: hidden;
+        -webkit-transition: opacity 600ms, visibility 600ms;
+        transition: opacity 2000ms, visibility 600ms;
+    }
+}

@@ -1,0 +1,27 @@
+.skills {
+    background-color: #292929;
+    padding: 50px 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            height: 125px;
+            width: 125px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .devicons {
+        font-size: 5rem;
+    }
+
+}

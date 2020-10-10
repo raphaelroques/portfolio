@@ -1,0 +1,32 @@
+.about-me {
+    padding: 50px 0;
+
+    h2 {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    &-container {
+        display: flex;
+    }
+
+    .image-container {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .text-container {
+        width: 60%;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+}

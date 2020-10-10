@@ -1,0 +1,67 @@
+@import 'setup';
+@import 'devicons';
+@import 'slide-menu';
+@import 'page-content';
+@import 'top-nav';
+@import 'header';
+@import 'about-me';
+@import 'skills';
+@import 'footer';
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    color: white;
+    background-color: #313131;
+}
+
+.wrapper {
+    padding-right: 55px;
+    padding-left: 55px;
+}
+
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+i {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.7rem;
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        max-width: 1280px;
+        margin: 0 auto 0 auto;
+        width: 90%;
+        padding: 0;
+    }
+
+}
