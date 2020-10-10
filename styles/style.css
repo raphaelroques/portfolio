@@ -1134,28 +1134,52 @@ header {
   background: url(../images/header-background.jpg) center center no-repeat fixed;
 }
 
-header h3 {
+header h2 {
   font-size: 4rem;
   width: 300px;
 }
 
-header h3 span {
+header h2 span {
   color: #fa9b1b;
   display: block;
   width: 400px;
 }
 
-header h4 {
+header h1 {
   font-size: 3rem;
+  padding-bottom: 50px;
 }
 
 .about-me {
   padding: 50px 0;
 }
 
-.about-me h2 {
-  padding-bottom: 50px;
+.about-me .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-me .header-container h2 {
+  margin-bottom: 50px;
   text-align: center;
+  color: #fa9b1b;
+  position: relative;
+  display: inline-block;
+}
+
+.about-me .header-container h2::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(7%, #fa9b1b), color-stop(93%, #dca52e));
+  background: linear-gradient(to left, #fa9b1b 7%, #dca52e 93%);
+  bottom: -10px;
+  left: 0;
 }
 
 .about-me-container {
@@ -1187,6 +1211,26 @@ header h4 {
 
 .about-me .text-container p {
   margin-bottom: 10px;
+}
+
+.about-me .text-container h3 {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.about-me .text-container h3::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(7%, #fa9b1b), color-stop(93%, #dca52e));
+  background: linear-gradient(to left, #fa9b1b 7%, #dca52e 93%);
+  bottom: 15px;
+  left: 0;
+}
+
+.about-me .text-container h4 {
+  padding-bottom: 10px;
 }
 
 .skills {
@@ -1278,6 +1322,9 @@ p,
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 button {
   margin: 0;
   padding: 0;
