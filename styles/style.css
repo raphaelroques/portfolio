@@ -1099,6 +1099,25 @@ html {
   display: none;
 }
 
+.top-nav .logo-top-nav {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.top-nav .logo-top-nav span {
+  color: #fa9b1b;
+}
+
+.top-nav .top-nav-button {
+  background-color: transparent;
+  border: none;
+}
+
+.top-nav .top-nav-button i {
+  color: orange;
+  font-size: 3rem;
+}
+
 @media (max-width: 900px) {
   .top-nav {
     display: -webkit-box;
