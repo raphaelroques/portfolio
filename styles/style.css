@@ -1271,8 +1271,33 @@ header h1 {
   padding: 50px 0;
 }
 
-.skills h2 {
+.skills .skills-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills .skills-header-container h2 {
+  margin-bottom: 50px;
   text-align: center;
+  color: #fa9b1b;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.skills .skills-header-container h2::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(7%, #fa9b1b), color-stop(93%, #dca52e));
+  background: linear-gradient(to left, #fa9b1b 7%, #dca52e 93%);
+  bottom: -10px;
+  left: 0;
 }
 
 .skills ul {
@@ -1303,6 +1328,49 @@ header h1 {
 
 .skills .devicons {
   font-size: 5rem;
+}
+
+.contact {
+  padding: 50px 0;
+}
+
+.contact .contact-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .contact-header-container h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fa9b1b;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.contact .contact-header-container h2::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(7%, #fa9b1b), color-stop(93%, #dca52e));
+  background: linear-gradient(to left, #fa9b1b 7%, #dca52e 93%);
+  bottom: -10px;
+  left: 0;
+}
+
+.contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer {

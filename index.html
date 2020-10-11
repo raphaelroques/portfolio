@@ -72,7 +72,7 @@
     <!-- end of top-nav -->
 
     <!-- Header -->
-    <header>
+    <header id="home">
       <div class="header-container wrapper">
         <h1>Hey, I’m Raphael Roques</h4>
           <h2>Front End <span>Web Developer.</span></h3>
@@ -83,7 +83,7 @@
     <!-- main  -->
     <main>
       <!-- about me -->
-      <section class="about-me">
+      <section class="about-me" id="about">
         <div class="wrapper">
 
           <div class="header-container">
@@ -121,11 +121,13 @@
 
       </section>
       <!-- skills -->
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="wrapper">
-          <h2>SKILLS</h2>
-          <ul class="skills-container">
+          <div class="skills-header-container">
+            <h2>SKILLS</h2>
+          </div>
 
+          <ul class="skills-container">
             <li class="skills-title">
               <span aria-hidden="true" class="devicons devicons devicons-html5" title="HTML5"></span>
               <p>HTML5</p>
@@ -188,6 +190,51 @@
           </ul>
         </div>
       </section>
+      <!-- end of skills -->
+
+      <!-- projects -->
+      <section class="projects" id="projects">
+
+      </section>
+      <!-- end of projects -->
+
+      <!-- contact -->
+      <section class="contact" id="contact">
+        <div class="wrapper">
+          <div class="contact-header-container">
+            <h2>CONTACT ME</h2>
+          </div>
+
+          <div class="form-container">
+            <form class="contact-form" action="mail.php" method="post">
+
+              <input type="text" class="form-control" id="name" name="name" required="" value=""
+                onkeyup="this.setAttribute('value', this.value);">
+              <label for="name">Name</label>
+
+              <input type="email" class="form-control" id="email" name="email" required="" value=""
+                onkeyup="this.setAttribute('value', this.value);">
+              <label for="email">Email</label>
+
+              <input type="text" class="form-control" id="subject" name="subject" required="" value=""
+                onkeyup="this.setAttribute('value', this.value);">
+              <label for="subject">Subject</label>
+
+              <textarea class="form-control" id="message" name="message" required="" data-value=""
+                onkeyup="this.setAttribute('data-value', this.value);"></textarea>
+              <label for="message">Your Message</label>
+
+              <button class="main-btn" type="submit" name="send">Send Message</button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- end of contact -->
+
+
     </main>
     <!-- end of main -->
 
