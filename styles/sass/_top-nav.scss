@@ -13,11 +13,21 @@
     .top-nav-button {
         background-color: transparent;
         border: none;
+        transition: 700ms;
 
         i {
             color: orange;
             font-size: 3rem;
         }
+    }
+
+    .top-nav-button.active {
+        // -webkit-transform: rotate(-45deg);
+        // -moz-transform: rotate(-45deg);
+        // -ms-transform: rotate(-45deg);
+        // -o-transform: rotate(-45deg);
+        transform: rotate(-90deg);
+        transition: 700ms;
     }
 }
 
@@ -32,6 +42,5 @@
             display: flex;
             justify-content: space-between;
         }
-
     }
 }
