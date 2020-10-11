@@ -1078,10 +1078,7 @@ html {
 
 @media (max-width: 900px) {
   .slide-menu {
-    visibility: hidden;
-    -webkit-transition: opacity 600ms, visibility 600ms;
-    -webkit-transition: opacity 2000ms, visibility 600ms;
-    transition: opacity 2000ms, visibility 600ms;
+    display: none;
   }
 }
 
