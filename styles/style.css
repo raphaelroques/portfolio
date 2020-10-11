@@ -1389,6 +1389,63 @@ header h1 {
   font-size: 5rem;
 }
 
+.projects {
+  padding: 50px 0;
+}
+
+.projects .projects-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .projects-header-container h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #fa9b1b;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.projects .projects-header-container h2::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(7%, #fa9b1b), color-stop(93%, #dca52e));
+  background: linear-gradient(to left, #fa9b1b 7%, #dca52e 93%);
+  bottom: -10px;
+  left: 0;
+}
+
+.projects .projects-gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects .projects-gallery-container .project-content {
+  width: 33%;
+  height: 200px;
+  background-color: #292929;
+  border: 1px solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact {
   padding: 50px 0;
   background-color: #292929;

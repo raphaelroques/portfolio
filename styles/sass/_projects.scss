@@ -1,0 +1,43 @@
+.projects {
+    padding: 50px 0;
+
+    .projects-header-container {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            margin-bottom: 50px;
+            text-align: center;
+            color: #fa9b1b;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        h2::before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to left, #fa9b1b 7%, #dca52e 93%);
+            bottom: -10px;
+            left: 0;
+        }
+    }
+
+    .projects-gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .project-content {
+            width: 33%;
+            height: 200px;
+            background-color: #292929;
+            border: 1px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}
