@@ -2,6 +2,13 @@
     background-color: #292929;
     padding: 50px 0;
 
+    .skills-main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .skills-header-container {
         display: flex;
         justify-content: center;
@@ -26,14 +33,15 @@
         }
     }
 
-    ul {
+    .skills-container {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        max-width: 1000px;
 
         li {
             height: 200px;
-            width: 25%;
+            width: 200px;
             max-width: 300px;
             min-width: 200px;
             display: flex;
@@ -42,6 +50,7 @@
             align-items: center;
             margin: 10px;
             background-color: #313131;
+            border-radius: 100px;
 
             .icon-container {
                 width: 100%;
@@ -52,6 +61,10 @@
 
                 .devicons {
                     text-align: center;
+                    font-size: 6rem;
+                }
+
+                .fa-universal-access::before {
                     font-size: 6rem;
                 }
 
