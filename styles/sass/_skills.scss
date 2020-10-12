@@ -28,20 +28,37 @@
 
     ul {
         display: flex;
+        justify-content: space-evenly;
         flex-wrap: wrap;
 
         li {
-            height: 125px;
-            width: 125px;
+            height: 200px;
+            width: 25%;
+            max-width: 300px;
+            min-width: 200px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin: 10px;
+            background-color: #313131;
+
+            .icon-container {
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .devicons {
+                    text-align: center;
+                    font-size: 6rem;
+                }
+
+            }
         }
     }
 
-    .devicons {
-        font-size: 5rem;
-    }
+
 
 }
