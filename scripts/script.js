@@ -14,7 +14,7 @@ portfolio.slideMenuCliked = function () {
     $('.home-nav').css({ color: 'orange' });
 
     $('.about-nav > span').hide();
-    $('.about-nav').css({ color: 'white' });
+    $('.about-nav').css({ color: 'inherit' });
     $('.skills-nav > span').hide();
     $('.skills-nav').css({ color: 'white' });
     $('.projects-nav > span').hide();
@@ -80,9 +80,21 @@ portfolio.slideMenuCliked = function () {
   });
 };
 
+portfolio.projectContainerHeight = function () {
+  const projectContainerWidth = $('.project-content').width();
+  $('.project-content').css({ height: projectContainerWidth * (4 / 3) + 'px' });
+  $(window).resize(function () {
+    const projectContainerWidth = $('.project-content').width();
+    $('.project-content').css({
+      height: projectContainerWidth * (4 / 3) + 'px',
+    });
+  });
+};
+
 portfolio.init = function () {
   portfolio.topNavClicked();
   portfolio.slideMenuCliked();
+  portfolio.projectContainerHeight();
 };
 
 $(document).ready(function () {

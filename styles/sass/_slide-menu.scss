@@ -18,9 +18,10 @@
     justify-content: center;
     align-items: center;
     height: 200px;
+    font-size: 3rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    border-bottom: 1px solid #aaaaaa;
+    border-bottom: 1px solid #313131;
 }
 
 .logo span {
@@ -29,9 +30,9 @@
 
 .menu-links {
     li {
-        border-top: 1px solid grey;
-        border-bottom: 1px solid #aaaaaa;
-        padding: 10px;
+        border-top: 1px solid #414141;
+        border-bottom: 1px solid #515151;
+        padding: 25px;
 
         :hover,
         :focus,
@@ -40,11 +41,11 @@
         }
 
         &:first-child {
-            border-top: 1px solid grey;
+            border-top: 1px solid #414141;
         }
 
         &:last-child {
-            border-bottom: 1px solid #aaaaaa;
+            border-bottom: 1px solid #515151;
         }
 
         a {

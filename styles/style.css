@@ -1107,9 +1107,10 @@ p {
       -ms-flex-align: center;
           align-items: center;
   height: 200px;
+  font-size: 3rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  border-bottom: 1px solid #aaaaaa;
+  border-bottom: 1px solid #313131;
 }
 
 .logo span {
@@ -1117,9 +1118,9 @@ p {
 }
 
 .menu-links li {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid #aaaaaa;
-  padding: 10px;
+  border-top: 1px solid #414141;
+  border-bottom: 1px solid #515151;
+  padding: 25px;
 }
 
 .menu-links li :hover,
@@ -1129,11 +1130,11 @@ p {
 }
 
 .menu-links li:first-child {
-  border-top: 1px solid grey;
+  border-top: 1px solid #414141;
 }
 
 .menu-links li:last-child {
-  border-bottom: 1px solid #aaaaaa;
+  border-bottom: 1px solid #515151;
 }
 
 .menu-links li a {
@@ -1483,7 +1484,6 @@ header h1 {
 
 .projects .projects-gallery-container .project-content {
   width: calc((100% - 60px)/3);
-  height: 200px;
   background-color: #292929;
   border: 1px solid grey;
   display: -webkit-box;
