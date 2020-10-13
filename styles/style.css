@@ -1504,6 +1504,11 @@ header h1 {
   margin: 10px;
 }
 
+.projects .projects-gallery-container .project-content a {
+  display: inherit;
+  width: 100%;
+}
+
 .contact {
   padding: 50px 0;
   background-color: #292929;
