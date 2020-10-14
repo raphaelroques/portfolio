@@ -1348,7 +1348,7 @@ header h1 {
   }
 }
 
-.scale-in-center:hover {
+.scale-in-center {
   -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -1603,6 +1603,9 @@ header h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects .projects-gallery-container .project-content {
@@ -1629,23 +1632,49 @@ header h1 {
 }
 
 .projects .projects-gallery-container .project-content .scale-in-center {
+  background-color: rgba(128, 15, 0, 0.884);
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.projects .projects-gallery-container .project-content .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
+  background-color: rgba(0, 128, 0, 0);
   width: 100%;
   height: 100%;
 }
 
-.projects .projects-gallery-container .project-content .scale-in-center p {
+.projects .projects-gallery-container .project-content .overlay a {
+  width: auto;
+  font-weight: 600;
   display: none;
 }
 
-.projects .projects-gallery-container .project-content .scale-in-center:hover {
+.projects .projects-gallery-container .project-content .overlay button {
+  display: none;
+}
+
+.projects .projects-gallery-container .project-content:hover .overlay {
+  background-color: rgba(31, 31, 31, 0.884);
   -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  visibility: visible;
-  position: absolute;
-  background-color: rgba(255, 166, 0, 0.795);
-  width: 100%;
-  height: 100%;
+}
+
+.projects .projects-gallery-container .project-content:hover a,
+.projects .projects-gallery-container .project-content:hover button {
+  display: inherit;
 }
 
 @media (max-width: 1100px) {
