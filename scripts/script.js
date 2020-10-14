@@ -91,10 +91,52 @@ portfolio.projectContainerHeight = function () {
   });
 };
 
+// portfolio.scroll = function () {
+//   $(window).scroll(function () {
+//     $('.animation-test').each(function () {
+//       var imagePos = $(this).offset().top;
+//       var imageHeight = $(this).height();
+//       var topOfWindow = $(window).scrollTop();
+
+//       if (
+//         imagePos < topOfWindow + imageHeight &&
+//         imagePos + imageHeight > topOfWindow
+//       ) {
+//         $(this).addClass('slideRight');
+//       } else {
+//         $(this).removeClass('slideRight');
+//       }
+//     });
+//   });
+// };
+
+portfolio.scroll = function () {
+  $(window).scroll(function () {
+    const topOfWindow = $(window).scrollTop();
+    console.log(topOfWindow);
+    if (topOfWindow >= 0) {
+      $('.header-container h1').addClass('tracking-in-contract-bck');
+    }
+    if (topOfWindow > 300) {
+      $('.about-me h2').addClass('slide-in-left');
+    }
+    if (topOfWindow > 1000) {
+      $('.skills h2').addClass('slide-in-right');
+    }
+    if (topOfWindow > 1830) {
+      $('.projects h2').addClass('slide-in-left');
+    }
+    if (topOfWindow > 2850) {
+      $('.contact h2').addClass('slide-in-right');
+    }
+  });
+};
+
 portfolio.init = function () {
   portfolio.topNavClicked();
   portfolio.slideMenuCliked();
   portfolio.projectContainerHeight();
+  portfolio.scroll();
 };
 
 $(document).ready(function () {
