@@ -7,76 +7,31 @@ portfolio.topNavClicked = function () {
   });
 };
 
+portfolio.slideMenuItems = [
+  '.home-nav',
+  '.about-nav',
+  '.skills-nav',
+  '.projects-nav',
+  '.contact-nav',
+];
+
 portfolio.slideMenuCliked = function () {
-  $('.home-nav > span').hide();
-  $('.home-nav').on('click', function () {
-    $('.home-nav > span').show();
-    $('.home-nav').css({ color: 'orange' });
+  $.each(portfolio.slideMenuItems, function () {
+    $(`${this} > span`).hide();
 
-    $('.about-nav > span').hide();
-    $('.about-nav').css({ color: 'inherit' });
-    $('.skills-nav > span').hide();
-    $('.skills-nav').css({ color: 'white' });
-    $('.projects-nav > span').hide();
-    $('.projects-nav').css({ color: 'white' });
-    $('.contact-nav > span').hide();
-    $('.contact-nav').css({ color: 'white' });
-  });
-  $('.about-nav > span').hide();
-  $('.about-nav').on('click', function () {
-    $('.about-nav > span').show();
-    $('.about-nav').css({ color: 'orange' });
-
-    $('.home-nav > span').hide();
-    $('.home-nav').css({ color: 'white' });
-    $('.skills-nav > span').hide();
-    $('.skills-nav').css({ color: 'white' });
-    $('.projects-nav > span').hide();
-    $('.projects-nav').css({ color: 'white' });
-    $('.contact-nav > span').hide();
-    $('.contact-nav').css({ color: 'white' });
-  });
-  $('.skills-nav > span').hide();
-  $('.skills-nav').on('click', function () {
-    $('.skills-nav > span').show();
-    $('.skills-nav').css({ color: 'orange' });
-
-    $('.home-nav > span').hide();
-    $('.home-nav').css({ color: 'white' });
-    $('.about-nav > span').hide();
-    $('.about-nav').css({ color: 'white' });
-    $('.projects-nav > span').hide();
-    $('.projects-nav').css({ color: 'white' });
-    $('.contact-nav > span').hide();
-    $('.contact-nav').css({ color: 'white' });
-  });
-  $('.projects-nav > span').hide();
-  $('.projects-nav').on('click', function () {
-    $('.projects-nav > span').show();
-    $('.projects-nav').css({ color: 'orange' });
-
-    $('.home-nav > span').hide();
-    $('.home-nav').css({ color: 'white' });
-    $('.about-nav > span').hide();
-    $('.about-nav').css({ color: 'white' });
-    $('.skills-nav > span').hide();
-    $('.skills-nav').css({ color: 'white' });
-    $('.contact-nav > span').hide();
-    $('.contact-nav').css({ color: 'white' });
-  });
-  $('.contact-nav > span').hide();
-  $('.contact-nav').on('click', function () {
-    $('.contact-nav > span').show();
-    $('.contact-nav').css({ color: 'orange' });
-
-    $('.home-nav > span').hide();
-    $('.home-nav').css({ color: 'white' });
-    $('.about-nav > span').hide();
-    $('.about-nav').css({ color: 'white' });
-    $('.skills-nav > span').hide();
-    $('.skills-nav').css({ color: 'white' });
-    $('.projects-nav > span').hide();
-    $('.projects-nav').css({ color: 'white' });
+    $(`${this}`).on('click', () => {
+      const array = [...portfolio.slideMenuItems];
+      const index = array.indexOf(`${this}`);
+      if (index > -1) {
+        array.splice(index, 1);
+      }
+      $(`${this} > span`).show();
+      $(`${this}`).css({ color: 'orange' });
+      for (i = 0; i < array.length; i++) {
+        $(`${array[i]} > span`).hide();
+        $(`${array[i]}`).css({ color: 'white' });
+      }
+    });
   });
 };
 
@@ -102,32 +57,13 @@ portfolio.imageContainerHeight = function () {
   });
 };
 
-// portfolio.scroll = function () {
-//   $(window).scroll(function () {
-//     $('.animation-test').each(function () {
-//       var imagePos = $(this).offset().top;
-//       var imageHeight = $(this).height();
-//       var topOfWindow = $(window).scrollTop();
-
-//       if (
-//         imagePos < topOfWindow + imageHeight &&
-//         imagePos + imageHeight > topOfWindow
-//       ) {
-//         $(this).addClass('slideRight');
-//       } else {
-//         $(this).removeClass('slideRight');
-//       }
-//     });
-//   });
-// };
-
 portfolio.scroll = function () {
   $(window).scroll(function () {
     const windowwidth = $(window).width();
-    console.log('width', windowwidth);
+    // console.log('width', windowwidth);
     const topOfWindow = $(window).scrollTop();
-    console.log('top', topOfWindow);
-    console.log('----');
+    // console.log('top', topOfWindow);
+    // console.log('----');
     if (windowwidth > 1230) {
       if (topOfWindow >= 0) {
         $('.header-container h1').addClass('tracking-in-contract-bck');

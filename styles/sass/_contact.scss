@@ -38,7 +38,7 @@
         input {
             background-color: #313131;
             border: none;
-            border-bottom: 1px solid rgba(255, 255, 255, .4);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
             color: white;
             padding: 25px;
         }
@@ -46,7 +46,7 @@
         textarea {
             background-color: #353535;
             border: none;
-            border-bottom: 1px solid rgba(255, 255, 255, .4);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
             min-height: 150px;
             color: white;
             padding: 25px;
@@ -64,6 +64,5 @@
             // position: absolute;
             margin-bottom: 10px;
         }
-
     }
 }
