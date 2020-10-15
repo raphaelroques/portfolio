@@ -85,6 +85,21 @@
             button {
                 display: inherit;
             }
+
+            a {
+                color: orange;
+            }
+
+            button {
+                background-color: #292929;
+                padding: 30px;
+                border-radius: 100px;
+
+                i {
+                    font-size: 3rem;
+                    color: orange;
+                }
+            }
         }
     }
 }

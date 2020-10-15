@@ -1,12 +1,4 @@
 const portfolio = {};
-
-portfolio.topNavClicked = function () {
-  $('.top-nav-button').on('click', function () {
-    $(this).toggleClass('active');
-    $('.slide-menu').toggleClass('active');
-  });
-};
-
 portfolio.slideMenuItems = [
   '.home-nav',
   '.about-nav',
@@ -14,6 +6,65 @@ portfolio.slideMenuItems = [
   '.projects-nav',
   '.contact-nav',
 ];
+
+portfolio.projectPreview = function () {
+  $('.preview').magnificPopup({
+    items: [
+      {
+        src: '../images/travel.jpg',
+      },
+      {
+        src: '../images/jewel-hub.jpg',
+      },
+      {
+        src: './images/star-wars-quizz.jpg',
+      },
+      {
+        src: './images/live-weather-forecast.jpg',
+      },
+      {
+        src: 'images/tech-challenge.jpg',
+      },
+      {
+        src: './images/panda-sanctuary.jpg',
+      },
+      {
+        src: './images/beachstays.jpg',
+      },
+      {
+        src: './images/slot-machine.jpg',
+      },
+      {
+        src: './images/movies-and-more.jpg',
+      },
+      {
+        src: './images/running.ca.jpg',
+      },
+      {
+        src: './images/reading-with-caffeine.jpg',
+      },
+    ],
+    gallery: {
+      enabled: true,
+    },
+    type: 'image', // this is default type
+  });
+};
+
+// portfolio.projectPreview = function () {
+//   $('.preview').on('click', function () {
+//     console.log('test');
+//     console.log(this);
+//     // $('.project-content').hide();
+//   });
+// };
+
+portfolio.topNavClicked = function () {
+  $('.top-nav-button').on('click', function () {
+    $(this).toggleClass('active');
+    $('.slide-menu').toggleClass('active');
+  });
+};
 
 portfolio.slideMenuCliked = function () {
   $.each(portfolio.slideMenuItems, function () {
@@ -122,6 +173,7 @@ portfolio.init = function () {
   portfolio.projectContainerHeight();
   portfolio.imageContainerHeight();
   portfolio.scroll();
+  portfolio.projectPreview();
 };
 
 $(document).ready(function () {
