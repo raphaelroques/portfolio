@@ -26,6 +26,38 @@
         }
     }
 
+    .contact-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0 40px;
+        margin: 25px 0;
+        background-color: #313131;
+
+
+
+        i {
+            color: orange;
+            font-size: 5rem;
+        }
+
+        i:hover,
+        i:focus {
+            color: rgba(255, 166, 0, 0.438);
+        }
+
+        // .email {
+        //     position: relative;
+        // }
+
+        // .email p {
+        //     color: orange;
+        //     font-weight: 600;
+        //     position: absolute;
+        // }
+
+    }
+
     .form-container {
         background-color: #313131;
         padding: 75px;

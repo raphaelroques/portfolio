@@ -2481,6 +2481,30 @@ header img {
   left: 0;
 }
 
+.contact .contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0 40px;
+  margin: 25px 0;
+  background-color: #313131;
+}
+
+.contact .contact-links i {
+  color: orange;
+  font-size: 5rem;
+}
+
+.contact .contact-links i:hover,
+.contact .contact-links i:focus {
+  color: rgba(255, 166, 0, 0.438);
+}
+
 .contact .form-container {
   background-color: #313131;
   padding: 75px;
