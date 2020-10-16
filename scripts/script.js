@@ -82,6 +82,7 @@ portfolio.slideMenuCliked = function () {
         $(`${array[i]} > span`).hide();
         $(`${array[i]}`).css({ color: 'white' });
       }
+      $('.slide-menu').toggleClass('active');
     });
   });
 };
