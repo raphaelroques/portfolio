@@ -86,3 +86,29 @@ header {
 //         }
 //     }
 // }
+
+@media (max-width: 570px) {
+    header {
+        height: 50vh;
+
+        h2 {
+            font-size: 5rem;
+            width: 335px;
+
+            span {
+                color: #fa991b;
+                display: block;
+                width: 400px;
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            padding-bottom: 75px;
+            object-fit: cover;
+        }
+
+
+    }
+
+}
