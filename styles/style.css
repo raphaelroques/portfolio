@@ -2549,6 +2549,38 @@ header img {
   margin-bottom: 10px;
 }
 
+.contact .scroll-top {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact .scroll-top a {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  border: 2px solid orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .scroll-top a i {
+  font-size: 4rem;
+  color: orange;
+}
+
 footer {
   height: 100px;
   display: -webkit-box;
