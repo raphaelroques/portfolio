@@ -66,10 +66,15 @@
                     width: auto;
                     font-weight: 600;
                     display: none;
+                    background-color: #292929;
+                    border-radius: 10px;
+                    border: 2px solid orange;
+                    padding: 25px;
                 }
 
                 button {
                     display: none;
+                    border: 2px solid orange;
                 }
             }
         }
@@ -102,6 +107,12 @@
             }
         }
     }
+}
+
+.projects .projects-gallery-container .project-content:hover button:hover,
+.projects .projects-gallery-container .project-content:hover a:hover {
+    background-color: rgba(255, 166, 0, 0.103);
+
 }
 
 @media (max-width: 1100px) {
