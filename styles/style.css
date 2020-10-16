@@ -1800,8 +1800,8 @@ header .header-text-container {
 }
 
 header h2 {
-  font-size: 5rem;
-  width: 300px;
+  font-size: 7rem;
+  width: 335px;
 }
 
 header h2 span {
@@ -1812,7 +1812,7 @@ header h2 span {
 
 header h1 {
   font-size: 4rem;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
   -o-object-fit: cover;
      object-fit: cover;
 }
