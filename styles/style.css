@@ -2393,12 +2393,13 @@ header img {
           justify-content: space-between;
   width: 100%;
   padding: 50px 0;
+  position: relative;
 }
 
 .projects .projects-gallery-container .project-description {
   width: 60%;
   height: 50%;
-  background-color: #414141;
+  background-color: #414141b4;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2411,6 +2412,7 @@ header img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 10px;
+  position: absolute;
 }
 
 .projects .projects-gallery-container .project-description h3 {
@@ -2424,6 +2426,29 @@ header img {
 
 .projects .projects-gallery-container .project-description p {
   margin: 25px 0;
+}
+
+.projects .projects-gallery-container .description-right {
+  left: 35%;
+  top: 20%;
+}
+
+.projects .projects-gallery-container .description-left {
+  top: 20%;
+  right: 35%;
+  z-index: 10;
+}
+
+.projects .projects-gallery-container .flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.projects .projects-gallery-container .flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .projects .projects-gallery-container .project-img-container {
