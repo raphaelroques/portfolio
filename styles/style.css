@@ -1075,6 +1075,7 @@ html {
   position: fixed;
   outline: none !important;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .mfp-container {
@@ -2383,8 +2384,24 @@ header img {
           justify-content: center;
 }
 
-.projects .projects-gallery-container .project-content {
-  width: calc((100% - 60px) / 3);
+.projects .projects-gallery-container .project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.projects .projects-gallery-container .project-description {
+  width: 60%;
+  height: 50%;
+  background-color: #414141;
+}
+
+.projects .projects-gallery-container .project-img-container {
+  width: 40%;
   background-color: #292929;
   border: 1px solid grey;
   display: -webkit-box;
@@ -2396,23 +2413,22 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
   position: relative;
   overflow: hidden;
 }
 
-.projects .projects-gallery-container .project-content a {
+.projects .projects-gallery-container .project-img-container a {
   display: inherit;
   width: 100%;
 }
 
-.projects .projects-gallery-container .project-content .scale-in-center {
+.projects .projects-gallery-container .project-img-container .scale-in-center {
   background-color: rgba(128, 15, 0, 0.884);
   -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.projects .projects-gallery-container .project-content .overlay {
+.projects .projects-gallery-container .project-img-container .overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2431,7 +2447,7 @@ header img {
   height: 100%;
 }
 
-.projects .projects-gallery-container .project-content .overlay a {
+.projects .projects-gallery-container .project-img-container .overlay a {
   width: auto;
   font-weight: 600;
   display: none;
@@ -2441,52 +2457,40 @@ header img {
   padding: 25px;
 }
 
-.projects .projects-gallery-container .project-content .overlay button {
+.projects .projects-gallery-container .project-img-container .overlay button {
   display: none;
   border: 2px solid orange;
 }
 
-.projects .projects-gallery-container .project-content:hover .overlay {
+.projects .projects-gallery-container .project-img-container:hover .overlay {
   background-color: rgba(31, 31, 31, 0.884);
   -webkit-animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.projects .projects-gallery-container .project-content:hover a,
-.projects .projects-gallery-container .project-content:hover button {
+.projects .projects-gallery-container .project-img-container:hover a,
+.projects .projects-gallery-container .project-img-container:hover button {
   display: inherit;
 }
 
-.projects .projects-gallery-container .project-content:hover a {
+.projects .projects-gallery-container .project-img-container:hover a {
   color: orange;
 }
 
-.projects .projects-gallery-container .project-content:hover button {
+.projects .projects-gallery-container .project-img-container:hover button {
   background-color: #292929;
   padding: 30px;
   border-radius: 100px;
 }
 
-.projects .projects-gallery-container .project-content:hover button i {
+.projects .projects-gallery-container .project-img-container:hover button i {
   font-size: 3rem;
   color: orange;
 }
 
-.projects .projects-gallery-container .project-content:hover button:hover,
-.projects .projects-gallery-container .project-content:hover a:hover {
+.projects .projects-gallery-container .project-img-container:hover button:hover,
+.projects .projects-gallery-container .project-img-container:hover a:hover {
   background-color: rgba(255, 166, 0, 0.103);
-}
-
-@media (max-width: 1100px) {
-  .projects .projects-gallery-container .project-content {
-    width: calc((100% - 60px) / 2);
-  }
-}
-
-@media (max-width: 850px) {
-  .projects .projects-gallery-container .project-content {
-    width: calc((100% - 60px));
-  }
 }
 
 .contact {

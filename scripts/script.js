@@ -8,6 +8,9 @@ portfolio.slideMenuItems = [
 ];
 
 portfolio.projectPreview = function () {
+  $('.preview').on('click', function () {
+    console.log('test asdasdasd');
+  });
   $('.preview').magnificPopup({
     items: [
       {
@@ -51,10 +54,10 @@ portfolio.projectPreview = function () {
   });
 };
 
-// portfolio.projectPreview = function () {
+// portfolio.projectHandleClick = function () {
 //   $('.preview').on('click', function () {
 //     console.log('test');
-//     console.log(this);
+//     console.log($(this).parent().parent());
 //     // $('.project-content').hide();
 //   });
 // };
@@ -87,16 +90,16 @@ portfolio.slideMenuCliked = function () {
   });
 };
 
-portfolio.projectContainerHeight = function () {
-  const projectContainerWidth = $('.project-content').width();
-  $('.project-content').css({ height: projectContainerWidth * (4 / 3) + 'px' });
-  $(window).resize(function () {
-    const projectContainerWidth = $('.project-content').width();
-    $('.project-content').css({
-      height: projectContainerWidth * (4 / 3) + 'px',
-    });
-  });
-};
+// portfolio.projectContainerHeight = function () {
+//   const projectContainerWidth = $('.project-content').width();
+//   $('.project-content').css({ height: projectContainerWidth * (4 / 3) + 'px' });
+//   $(window).resize(function () {
+//     const projectContainerWidth = $('.project-content').width();
+//     $('.project-content').css({
+//       height: projectContainerWidth * (4 / 3) + 'px',
+//     });
+//   });
+// };
 
 portfolio.imageContainerHeight = function () {
   const imageContainerWidth = $('.image-container').width();
@@ -171,12 +174,13 @@ portfolio.scroll = function () {
 portfolio.init = function () {
   portfolio.topNavClicked();
   portfolio.slideMenuCliked();
-  portfolio.projectContainerHeight();
+  // portfolio.projectContainerHeight();
   portfolio.imageContainerHeight();
   portfolio.scroll();
   portfolio.projectPreview();
 };
 
+AOS.init();
 $(document).ready(function () {
   portfolio.init();
 });
