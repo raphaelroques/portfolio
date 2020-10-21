@@ -191,3 +191,25 @@
 //         }
 //     }
 // }
+
+@media (max-width: 750px) {
+
+  .projects .projects-gallery-container .flex-end {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .projects .projects-gallery-container .flex-start {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects .projects-gallery-container .project-description {
+    width: 100%;
+  }
+
+  .projects .projects-gallery-container .project-img-container {
+    width: 70%;
+    margin: 20px 0;
+  }
+}
