@@ -34,7 +34,7 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            padding: 50px 0;
+            padding: 25px 0;
             position: relative;
         }
 
@@ -72,15 +72,20 @@
             top: 20%;
             right: 35%;
             z-index: 10;
+            background-color: #292929cb;
         }
 
 
         .flex-start {
             justify-content: start;
+            border-top: 1px solid orange;
+            border-bottom: 1px solid orange;
+
         }
 
         .flex-end {
             justify-content: end;
+            background-color: #414141;
         }
 
 
